@@ -1,9 +1,9 @@
-import {portfolioView} from './portfolio-view.mjs?v=20260921-quiet-credits';
-import {projects} from './content.mjs?v=20260921-quiet-credits';
-import {initLanguage,localProject} from './i18n.mjs?v=20260921-quiet-credits';
-import {initAccessibility} from './reading.mjs?v=20260921-quiet-credits';
+import {portfolioView} from './portfolio-view.mjs?v=20260921-szu-programme';
+import {projects} from './content.mjs?v=20260921-szu-programme';
+import {initLanguage,localProject} from './i18n.mjs?v=20260921-szu-programme';
+import {initAccessibility} from './reading.mjs?v=20260921-szu-programme';
 
-import {initProjectGallery} from './project-gallery.mjs?v=20260921-quiet-credits';
+import {initProjectGallery} from './project-gallery.mjs?v=20260921-szu-programme';
 
 document.addEventListener('languagechange',e=>{
  const id=document.body.dataset.project||'';
