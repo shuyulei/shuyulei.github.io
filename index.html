@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="style.css?v=20260921-bridge-funding">
   <link rel="stylesheet" href="experience.css?v=20260921-bridge-funding"><link rel="stylesheet" href="portfolio.css?v=20260921-bridge-funding">
   <link rel="stylesheet" href="refinement.css?v=20260921-bridge-funding"><link rel="stylesheet" href="brand.css?v=20260921-bridge-funding">
-  <script src="assets/lucide.min.js" defer></script><script src="app.js?v=20260921-bridge-funding" type="module"></script>
+  <script src="assets/lucide.min.js" defer></script><script src="app.js?v=20260922-navigation" type="module"></script>
   <noscript><style>.menu-toggle{display:none}#navigation{display:flex;position:static;flex-wrap:wrap}.site-header{flex-wrap:wrap}</style></noscript>
 <meta property="og:image" content="https://shuyulei.github.io/assets/shuyu-lei-portrait.png"><meta property="og:image:alt" content="Shuyu Lei"><meta name="twitter:card" content="summary"></head>
 <body>
@@ -32,26 +32,26 @@
       <button id="accessibility-toggle" class="icon-button" aria-label="Display settings" title="Display settings" aria-haspopup="dialog"><i data-lucide="eye" aria-hidden="true"></i><span data-ui="accessibility">Accessibility</span></button>
       <button class="menu-toggle icon-button" aria-label="Open navigation" title="Open navigation" aria-expanded="false" aria-controls="navigation"><i data-lucide="menu"></i><span class="menu-label" data-ui="menuLabel">Menu</span></button>
     </div>
-    <div class="top-navigation" role="navigation" aria-label="Main navigation"><a href="#research" data-ui="research">Research</a><a href="#about" data-ui="about">About</a><a href="#publications" data-ui="publications">Publications</a><a href="#reports" data-ui="reports">Reports</a><a href="#design" data-ui="design">Design</a><a href="#engagement" data-ui="engagement">Talks, teaching &amp; service</a><a href="#contact" data-ui="contact">Contact</a></div>
+    <div class="top-navigation" role="navigation" aria-label="Main navigation"><a href="#research" data-ui="research">Research &amp; Projects</a><a href="#about" data-ui="about">Background &amp; Experience</a><a href="#publications" data-ui="publications">Publications</a><a href="#reports" data-ui="reports">Reports &amp; Policy Contributions</a><a href="#design" data-ui="design">Design Portfolio</a><a href="#engagement" data-ui="engagement">Teaching &amp; Academic Service</a><a href="#contact" data-ui="contact">Contact &amp; Collaboration</a></div>
     <div class="scroll-progress" aria-hidden="true"></div>
   </header>
   <button class="nav-backdrop" aria-label="Close navigation" hidden tabindex="-1"></button>
   <nav id="navigation" aria-label="Section navigation">
     <span class="nav-caption" data-ui="onThisPage">On this page</span>
     <a href="#home"><span class="nav-index">00</span><span data-ui="home">Overview</span></a>
-    <a href="#research"><span class="nav-index">01</span><span data-ui="research">Research</span></a>
-    <a href="#about"><span class="nav-index">02</span><span data-ui="about">About</span></a>
+    <a href="#research"><span class="nav-index">01</span><span data-ui="research">Research &amp; Projects</span></a>
+    <a href="#about"><span class="nav-index">02</span><span data-ui="about">Background &amp; Experience</span></a>
     <a href="#publications"><span class="nav-index">03</span><span data-ui="publications">Publications</span></a>
-    <a href="#reports"><span class="nav-index">04</span><span data-ui="reports">Reports</span></a>
-    <a href="#design"><span class="nav-index">05</span><span data-ui="design">Design</span></a>
-    <a href="#engagement"><span class="nav-index">06</span><span data-ui="engagement">Talks, teaching &amp; service</span></a>
-    <a href="#contact"><span class="nav-index">07</span><span data-ui="contact">Contact</span></a>
+    <a href="#reports"><span class="nav-index">04</span><span data-ui="reports">Reports &amp; Policy Contributions</span></a>
+    <a href="#design"><span class="nav-index">05</span><span data-ui="design">Design Portfolio</span></a>
+    <a href="#engagement"><span class="nav-index">06</span><span data-ui="engagement">Teaching &amp; Academic Service</span></a>
+    <a href="#contact"><span class="nav-index">07</span><span data-ui="contact">Contact &amp; Collaboration</span></a>
     <a class="sidebar-cv" href="assets/Shuyu-Lei-CV.pdf" target="_blank" rel="noopener"><i data-lucide="file-text"></i><span data-ui="cv">Curriculum vitae</span><i data-lucide="arrow-up-right"></i></a>
   </nav>
   <div class="mobile-section-bar" role="navigation" aria-label="Quick section navigation">
     <i data-lucide="list" aria-hidden="true"></i>
     <label class="sr-only" for="mobile-section-select">Jump to section</label>
-    <select id="mobile-section-select"><option value="home">01 · Overview</option><option value="research">02 · Research</option><option value="about">03 · About</option><option value="publications">04 · Publications</option><option value="reports">05 · Reports</option><option value="design">06 · Design</option><option value="engagement">07 · Talks, teaching & service</option><option value="contact">08 · Contact</option></select>
+    <select id="mobile-section-select"><option value="home">01 · Overview</option><option value="research">02 · Research &amp; Projects</option><option value="about">03 · Background &amp; Experience</option><option value="publications">04 · Publications</option><option value="reports">05 · Reports &amp; Policy Contributions</option><option value="design">06 · Design Portfolio</option><option value="engagement">07 · Teaching &amp; Academic Service</option><option value="contact">08 · Contact &amp; Collaboration</option></select>
     <span class="mobile-section-count" aria-hidden="true">1 / 8</span>
     <a class="icon-button" href="#home" aria-label="Back to top" title="Back to top"><i data-lucide="arrow-up" aria-hidden="true"></i></a>
   </div>
@@ -185,7 +185,7 @@
     <input id="text-size" type="range" min="100" max="150" step="10" value="100">
     <label class="preference-toggle"><span data-ui="contrast">High contrast</span><input id="high-contrast" type="checkbox" role="switch"></label>
     <label class="preference-toggle"><span data-ui="motion">Reduce motion</span><input id="reduce-motion" type="checkbox" role="switch"></label>
-    <div class="reading-controls"><h3 data-ui="readAloud">Read aloud</h3><label for="reading-section" data-ui="section">Section</label><select id="reading-section"><option value="home" data-ui="home">Overview</option><option value="research" data-ui="research">Research</option><option value="about" data-ui="about">About</option><option value="publications" data-ui="publications">Publications</option><option value="reports" data-ui="reports">Reports</option><option value="design" data-ui="design">Design</option><option value="engagement" data-ui="engagement">Talks, teaching &amp; service</option><option value="contact" data-ui="contact">Contact</option></select>
+    <div class="reading-controls"><h3 data-ui="readAloud">Read aloud</h3><label for="reading-section" data-ui="section">Section</label><select id="reading-section"><option value="home" data-ui="home">Overview</option><option value="research" data-ui="research">Research &amp; Projects</option><option value="about" data-ui="about">Background &amp; Experience</option><option value="publications" data-ui="publications">Publications</option><option value="reports" data-ui="reports">Reports &amp; Policy Contributions</option><option value="design" data-ui="design">Design Portfolio</option><option value="engagement" data-ui="engagement">Teaching &amp; Academic Service</option><option value="contact" data-ui="contact">Contact &amp; Collaboration</option></select>
       <div class="reading-buttons"><button id="read-play" class="reader-command"><i data-lucide="play"></i><span data-ui="play">Read</span></button><button id="read-pause" class="icon-button" aria-label="Pause" title="Pause" disabled><i data-lucide="pause"></i></button><button id="read-stop" class="icon-button" aria-label="Stop" title="Stop" disabled><i data-lucide="square"></i></button></div>
       <p id="reading-status" role="status" aria-live="polite"></p>
     </div>
