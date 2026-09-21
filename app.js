@@ -1,13 +1,13 @@
-import {projects,researchIds,designIds,escapeHtml,icon,projectCard} from './content.mjs?v=20260921-quiet-credits';
-import {t,localProject,initLanguage} from './i18n.mjs?v=20260921-quiet-credits';
-import {initAccessibility} from './reading.mjs?v=20260921-quiet-credits';
-import {initEducation} from './education.mjs?v=20260921-quiet-credits';
+import {projects,researchIds,designIds,escapeHtml,icon,projectCard} from './content.mjs?v=20260921-szu-programme';
+import {t,localProject,initLanguage} from './i18n.mjs?v=20260921-szu-programme';
+import {initAccessibility} from './reading.mjs?v=20260921-szu-programme';
+import {initEducation} from './education.mjs?v=20260921-szu-programme';
 
-import {galleryMarkup,initGallery} from './gallery.mjs?v=20260921-quiet-credits';
-import {initTalks} from './talks.mjs?v=20260921-quiet-credits';
-import {initReports} from './reports.mjs?v=20260921-quiet-credits';
-import {initEditorial} from './editorial.mjs?v=20260921-quiet-credits';
-import {authorsMarkup} from './research-authors.mjs?v=20260921-quiet-credits';
+import {galleryMarkup,initGallery} from './gallery.mjs?v=20260921-szu-programme';
+import {initTalks} from './talks.mjs?v=20260921-szu-programme';
+import {initReports} from './reports.mjs?v=20260921-szu-programme';
+import {initEditorial} from './editorial.mjs?v=20260921-szu-programme';
+import {authorsMarkup} from './research-authors.mjs?v=20260921-szu-programme';
 const dialog=document.querySelector('#project-dialog');
 let lastFocus=null,pushedProject=false;
 function openProject(id,push=false){

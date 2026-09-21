@@ -1,5 +1,5 @@
-import {escapeHtml as e,icon} from './content.mjs?v=20260921-quiet-credits';
-import {researchDetails} from './research-details.mjs?v=20260921-quiet-credits';
+import {escapeHtml as e,icon} from './content.mjs?v=20260921-szu-programme';
+import {researchDetails} from './research-details.mjs?v=20260921-szu-programme';
 const descriptions={
   "walking": [
     [
