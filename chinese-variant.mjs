@@ -54,7 +54,7 @@ export async function applyChineseVariant(enabled){
  if(enabled&&!convert){
   group?.setAttribute('aria-busy','true');
   try{
-   loading??=import('./hk-copy.mjs?v=20260921-compact-credits');
+   loading??=import('./hk-copy.mjs?v=20260921-quiet-credits');
    convert=(await loading).hongKongText;
   }catch{
    loading=null;active=false;

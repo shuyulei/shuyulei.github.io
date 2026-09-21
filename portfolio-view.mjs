@@ -1,7 +1,7 @@
-import {projects,designIds,projectCard,escapeHtml as e,icon} from './content.mjs?v=20260921-compact-credits';
-import {portfolioDownload} from './portfolio-data.mjs?v=20260921-compact-credits';
+import {projects,designIds,projectCard,escapeHtml as e,icon} from './content.mjs?v=20260921-quiet-credits';
+import {portfolioDownload} from './portfolio-data.mjs?v=20260921-quiet-credits';
 
-import {projectStories} from './project-stories.mjs?v=20260921-compact-credits';
+import {projectStories} from './project-stories.mjs?v=20260921-quiet-credits';
 
 const labels={
  en:{back:'Back to portfolio',home:'Back to home',title:'Design portfolio',intro:'Urban design, landscape, architecture and personal artwork.',download:'Download full portfolio (PDF)',size:'Complete portfolio · 32 pages · 77 MB',role:'My contribution',team:'Project team',boards:'Project drawings',page:'Portfolio page',all:'All projects',report:'Download studio report (PDF)',gallery:'HKU studio gallery',next:'Next project',art:'Painting and sketching are also part of how I observe places.'},

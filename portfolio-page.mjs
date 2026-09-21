@@ -1,9 +1,9 @@
-import {portfolioView} from './portfolio-view.mjs?v=20260921-compact-credits';
-import {projects} from './content.mjs?v=20260921-compact-credits';
-import {initLanguage,localProject} from './i18n.mjs?v=20260921-compact-credits';
-import {initAccessibility} from './reading.mjs?v=20260921-compact-credits';
+import {portfolioView} from './portfolio-view.mjs?v=20260921-quiet-credits';
+import {projects} from './content.mjs?v=20260921-quiet-credits';
+import {initLanguage,localProject} from './i18n.mjs?v=20260921-quiet-credits';
+import {initAccessibility} from './reading.mjs?v=20260921-quiet-credits';
 
-import {initProjectGallery} from './project-gallery.mjs?v=20260921-compact-credits';
+import {initProjectGallery} from './project-gallery.mjs?v=20260921-quiet-credits';
 
 document.addEventListener('languagechange',e=>{
  const id=document.body.dataset.project||'';

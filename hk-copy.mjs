@@ -1,5 +1,5 @@
 import {Converter} from './vendor/opencc/full.mjs';
-import {hkEditorial} from './hk-editorial.mjs?v=20260921-compact-credits';
+import {hkEditorial} from './hk-editorial.mjs?v=20260921-quiet-credits';
 
 const traditional=Converter({from:'cn',to:'hk'});
 // Editorial terminology is separate from script conversion and scoped by project.

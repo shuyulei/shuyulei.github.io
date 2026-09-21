@@ -1,6 +1,6 @@
-import {researchText} from './research-details.mjs?v=20260921-compact-credits';
-import {portfolioProjects} from './portfolio-data.mjs?v=20260921-compact-credits';
-import {authorsMarkup,creditWords} from './research-authors.mjs?v=20260921-compact-credits';
+import {researchText} from './research-details.mjs?v=20260921-quiet-credits';
+import {portfolioProjects} from './portfolio-data.mjs?v=20260921-quiet-credits';
+import {authorsMarkup,creditWords} from './research-authors.mjs?v=20260921-quiet-credits';
 const portfolioUrl='https://www.dropbox.com/scl/fi/mka6zodudayeshsd66xnn/Lei-Shuyu-s-Portfolio.pdf?rlkey=9b5he2gn2nomp72278k6gu6uc&dl=1';
 const projects=[
  {id:'walking',title:'Whose 15-minute city?',topic:'Age-friendly accessibility',year:'2026',place:'Hong Kong',image:'walking.webp',alt:'Research map showing spatial clusters of older residents and walking accessibility in Hong Kong',venue:'Journal of Transport Geography',doi:'10.1016/j.jtrangeo.2026.104656',deck:'Rethinking proximity through the walking needs of older adults.',body:'A single walking-time threshold can hide important differences between age groups. This research develops an age-sensitive X-minute-city framework using travel survey records, facility locations, and a three-dimensional pedestrian network.',finding:'Older adults complete most daily walking trips within 5–12 minutes, depending on age and destination. Mapping these differences helps locate neighbourhoods where conventional proximity measures may overstate accessibility.',methods:'Travel survey analysis; age-specific walking thresholds; GIS network analysis; spatial clustering.',authors:'Shuyu Lei, Mushu Zhao, Jiangping Zhou, Xiaochun Yang',caption:'Spatial clustering of older-adult population and accessibility. Figure 13, Lei et al. (2026), Journal of Transport Geography.'},

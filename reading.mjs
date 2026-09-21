@@ -1,5 +1,5 @@
-import {t,storage} from './i18n.mjs?v=20260921-compact-credits';
-import {icon} from './content.mjs?v=20260921-compact-credits';
+import {t,storage} from './i18n.mjs?v=20260921-quiet-credits';
+import {icon} from './content.mjs?v=20260921-quiet-credits';
 
 export function initAccessibility(){
  const header=document.querySelector('.site-header');

@@ -34,7 +34,7 @@ export function authorsMarkup(p,{compact=false}={}){
    const signature=`${name==='Shuyu Lei'?`<strong>${esc(name)}</strong>`:esc(name)}${roles.includes('corresponding')?'<sup aria-hidden="true">*</sup>':''}`;
    return `<li lang="en">${linkProfiles&&profiles[name]?`<a href="${esc(profiles[name])}" target="_blank" rel="noopener" title="${esc(label)}" aria-label="${esc(label)}">${signature}</a>`:`<span title="${esc(label)}">${signature}</span>`}</li>`;
   }).join('');
-  return `<div class="research-authors research-authors-compact"><ul aria-label="${w.authors}">${names}</ul>${people.some(person=>person.includes('corresponding'))?`<small class="correspondence-note">* ${w.corresponding}</small>`:''}</div>`;
+  return `<div class="research-authors research-authors-compact"><ul aria-label="${w.authors}">${names}</ul></div>`;
  }
  const rows=people.map(([name,...roles])=>`<li><span class="author-name" lang="en">${linkProfiles&&profiles[name]?`<a href="${esc(profiles[name])}" target="_blank" rel="noopener" title="${esc(name)} · ${profiles[name].includes('researchgate')?'ResearchGate':'Google Scholar'}">${esc(name)}<i data-lucide="arrow-up-right" aria-hidden="true"></i></a>`:esc(name)}</span><span class="author-role">${roles.map(role=>w[role]).join(' · ')}</span></li>`).join('');
  return `<div class="research-authors${compact?' research-authors-compact':''}"><strong class="credit-heading">${p.id==='city-connect'?w.teamHeading:w.authors}</strong><ul>${rows}</ul></div>`;
