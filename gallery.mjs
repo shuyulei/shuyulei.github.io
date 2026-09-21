@@ -1,5 +1,5 @@
-import {escapeHtml as e,icon} from './content.mjs?v=20260921-honours-funding';
-import {researchDetails} from './research-details.mjs?v=20260921-honours-funding';
+import {escapeHtml as e,icon} from './content.mjs?v=20260921-bridge-funding';
+import {researchDetails} from './research-details.mjs?v=20260921-bridge-funding';
 const descriptions={
   "walking": [
     [
