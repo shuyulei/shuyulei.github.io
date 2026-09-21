@@ -1,4 +1,5 @@
 export const extraCopy={
+ fundingBridge:['National Key R&D Program of China · Smart Travel Service Technology for the Hong Kong–Zhuhai–Macao Bridge','国家重点研发计划 · 港珠澳大桥智慧出行服务技术','Programa Nacional de I+D de China · Tecnología de servicios inteligentes de movilidad para el puente Hong Kong–Zhuhai–Macao'],
  fundingStations:['Research Grants Council · General Research Fund (17602624)','香港研究资助局 · 优配研究金（17602624）','Research Grants Council · General Research Fund (17602624)'],
  fundingIntermodal:['Innovation and Technology Fund · GSP/016/19','创新及科技基金 · GSP/016/19','Innovation and Technology Fund · GSP/016/19'],
  seeReports:['See reports & practice guides','查看报告与实践成果','Ver informes y guías'],

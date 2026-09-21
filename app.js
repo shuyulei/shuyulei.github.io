@@ -1,13 +1,13 @@
-import {projects,researchIds,designIds,escapeHtml,icon,projectCard} from './content.mjs?v=20260921-honours-funding';
-import {t,localProject,initLanguage} from './i18n.mjs?v=20260921-honours-funding';
-import {initAccessibility} from './reading.mjs?v=20260921-honours-funding';
-import {initEducation} from './education.mjs?v=20260921-honours-funding';
+import {projects,researchIds,designIds,escapeHtml,icon,projectCard} from './content.mjs?v=20260921-bridge-funding';
+import {t,localProject,initLanguage} from './i18n.mjs?v=20260921-bridge-funding';
+import {initAccessibility} from './reading.mjs?v=20260921-bridge-funding';
+import {initEducation} from './education.mjs?v=20260921-bridge-funding';
 
-import {galleryMarkup,initGallery} from './gallery.mjs?v=20260921-honours-funding';
-import {initTalks} from './talks.mjs?v=20260921-honours-funding';
-import {initReports} from './reports.mjs?v=20260921-honours-funding';
-import {initEditorial} from './editorial.mjs?v=20260921-honours-funding';
-import {authorsMarkup} from './research-authors.mjs?v=20260921-honours-funding';
+import {galleryMarkup,initGallery} from './gallery.mjs?v=20260921-bridge-funding';
+import {initTalks} from './talks.mjs?v=20260921-bridge-funding';
+import {initReports} from './reports.mjs?v=20260921-bridge-funding';
+import {initEditorial} from './editorial.mjs?v=20260921-bridge-funding';
+import {authorsMarkup} from './research-authors.mjs?v=20260921-bridge-funding';
 const dialog=document.querySelector('#project-dialog');
 let lastFocus=null,pushedProject=false;
 function openProject(id,push=false){
