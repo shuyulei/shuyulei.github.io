@@ -1,12 +1,13 @@
-import {projects,researchIds,designIds,escapeHtml,icon,projectCard} from './content.mjs?v=20260921-contact-width';
-import {t,localProject,initLanguage} from './i18n.mjs?v=20260921-contact-width';
-import {initAccessibility} from './reading.mjs?v=20260921-contact-width';
-import {initEducation} from './education.mjs?v=20260921-contact-width';
+import {projects,researchIds,designIds,escapeHtml,icon,projectCard} from './content.mjs?v=20260921-research-credits';
+import {t,localProject,initLanguage} from './i18n.mjs?v=20260921-research-credits';
+import {initAccessibility} from './reading.mjs?v=20260921-research-credits';
+import {initEducation} from './education.mjs?v=20260921-research-credits';
 
-import {galleryMarkup,initGallery} from './gallery.mjs?v=20260921-contact-width';
-import {initTalks} from './talks.mjs?v=20260921-contact-width';
-import {initReports} from './reports.mjs?v=20260921-contact-width';
-import {initEditorial} from './editorial.mjs?v=20260921-contact-width';
+import {galleryMarkup,initGallery} from './gallery.mjs?v=20260921-research-credits';
+import {initTalks} from './talks.mjs?v=20260921-research-credits';
+import {initReports} from './reports.mjs?v=20260921-research-credits';
+import {initEditorial} from './editorial.mjs?v=20260921-research-credits';
+import {authorsMarkup} from './research-authors.mjs?v=20260921-research-credits';
 const dialog=document.querySelector('#project-dialog');
 let lastFocus=null,pushedProject=false;
 function openProject(id,push=false){
@@ -15,13 +16,13 @@ function openProject(id,push=false){
  dialog.dataset.hkContext=id;
  if(!dialog.open)lastFocus=document.activeElement;
  const url=p.doi?`https://doi.org/${p.doi}`:p.url;
- document.querySelector('#project-detail').innerHTML=`<header class="detail-header"><span class="section-number">${escapeHtml(p.topic)} / ${escapeHtml(p.year)}</span>${p.roleLabel?`<p class="authorship authorship-${p.authorship}">${escapeHtml(p.roleLabel)}</p>`:''}<h2 id="project-title">${escapeHtml(p.title)}</h2><p class="detail-deck">${escapeHtml(p.deck)}</p></header>${galleryMarkup(p)}<div class="detail-body"><div><h3>${p.detailHeading?escapeHtml(p.detailHeading):t('researchDetail')}</h3><p>${escapeHtml(p.body)}</p>${(p.detailSections||[]).map(([heading,text])=>`<h3>${escapeHtml(heading)}</h3><p>${escapeHtml(text)}</p>`).join('')}${p.finding?`<h3>${p.id==='city-connect'?({en:'Team recognition',zh:'团队获奖',es:'Reconocimiento del equipo'}[document.documentElement.lang.slice(0,2)]):t('findings')}</h3><p>${escapeHtml(p.finding)}</p>`:''}</div><aside class="detail-meta"><strong>${t('approach')}</strong><p>${escapeHtml(p.methods)}</p>${p.authors?`<strong>${t('authors')}</strong><p lang="en">${escapeHtml(p.authors)}</p>`:''}${p.venue?`<strong>${t('venue')}</strong><p lang="en">${escapeHtml(p.venue)}</p>`:''}${url?`<a class="text-link" href="${url}" target="_blank" rel="noopener">${t(p.doi?'paper':p.linkKey||'portfolio')} ${icon('arrow-up-right')}</a>`:''}${(p.links||[]).map(link=>`<a class="text-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener">${t(link.key)} ${icon('arrow-up-right')}</a>`).join('')}</aside></div>`;
+ document.querySelector('#project-detail').innerHTML=`<header class="detail-header"><span class="section-number">${escapeHtml(p.topic)} / ${escapeHtml(p.year)}</span>${p.roleLabel?`<p class="authorship authorship-${p.authorship}">${escapeHtml(p.roleLabel)}</p>`:''}<h2 id="project-title">${escapeHtml(p.title)}</h2><p class="detail-deck">${escapeHtml(p.deck)}</p></header>${galleryMarkup(p)}<div class="detail-body"><div><h3>${p.detailHeading?escapeHtml(p.detailHeading):t('researchDetail')}</h3><p>${escapeHtml(p.body)}</p>${(p.detailSections||[]).map(([heading,text])=>`<h3>${escapeHtml(heading)}</h3><p>${escapeHtml(text)}</p>`).join('')}${p.finding?`<h3>${p.id==='city-connect'?({en:'Team recognition',zh:'团队获奖',es:'Reconocimiento del equipo'}[document.documentElement.lang.slice(0,2)]):t('findings')}</h3><p>${escapeHtml(p.finding)}</p>`:''}</div><aside class="detail-meta"><strong>${t('approach')}</strong><p>${escapeHtml(p.methods)}</p>${authorsMarkup(p)}${p.venue?`<strong>${t('venue')}</strong><p lang="en">${escapeHtml(p.venue)}</p>`:''}${url?`<a class="text-link" href="${url}" target="_blank" rel="noopener">${t(p.doi?'paper':p.linkKey||'portfolio')} ${icon('arrow-up-right')}</a>`:''}${(p.links||[]).map(link=>`<a class="text-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener">${t(link.key)} ${icon('arrow-up-right')}</a>`).join('')}</aside></div>`;
  window.lucide?.createIcons();if(!dialog.open)dialog.showModal();initGallery(dialog);dialog.scrollTop=0;document.body.classList.add('dialog-open');
  if(push){const next=new URL(location);next.searchParams.set('project',id);history.pushState({project:id},'',next);pushedProject=true;}
 }
 function hideProject(){dialog.close();document.body.classList.remove('dialog-open');lastFocus?.focus();}
 function closeProject(){if(pushedProject){history.back();pushedProject=false;}else{const next=new URL(location);next.searchParams.delete('project');history.replaceState(null,'',next);hideProject();}}
-document.addEventListener('click',e=>{const a=e.target.closest('[data-project]');if(a&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&!e.altKey&&e.button===0){e.preventDefault();openProject(a.dataset.project,true);}});
+document.addEventListener('click',e=>{const a=e.target.closest('a[data-project]');if(a&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&!e.altKey&&e.button===0){e.preventDefault();openProject(a.dataset.project,true);}});
 document.querySelector('.dialog-close').addEventListener('click',closeProject);
 dialog.addEventListener('cancel',e=>{e.preventDefault();closeProject();});
 dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeProject();}});

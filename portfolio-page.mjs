@@ -1,9 +1,9 @@
-import {portfolioView} from './portfolio-view.mjs?v=20260921-contact-width';
-import {projects} from './content.mjs?v=20260921-contact-width';
-import {initLanguage,localProject} from './i18n.mjs?v=20260921-contact-width';
-import {initAccessibility} from './reading.mjs?v=20260921-contact-width';
+import {portfolioView} from './portfolio-view.mjs?v=20260921-research-credits';
+import {projects} from './content.mjs?v=20260921-research-credits';
+import {initLanguage,localProject} from './i18n.mjs?v=20260921-research-credits';
+import {initAccessibility} from './reading.mjs?v=20260921-research-credits';
 
-import {initProjectGallery} from './project-gallery.mjs?v=20260921-contact-width';
+import {initProjectGallery} from './project-gallery.mjs?v=20260921-research-credits';
 
 document.addEventListener('languagechange',e=>{
  const id=document.body.dataset.project||'';

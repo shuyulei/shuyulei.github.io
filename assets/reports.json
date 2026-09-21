@@ -1,0 +1,62 @@
+[
+  {
+    "year": "2025",
+    "title": "Inclusive Mobility",
+    "series": "Urban Mobility Handbook",
+    "role": "Contributing author",
+    "description": "A practitioner-oriented handbook on inclusive and sustainable urban mobility. It brings together guidance on universal design and examples of inclusive transport services. Published through the 9.22 Green Mobility Platform, a sustainable mobility initiative supported by the China Academy of Urban Planning and Design and the Urban Planning Society of China.",
+    "image": "report-green-2025.webp",
+    "pdf": "https://www.cswcr.com/2025%E5%B9%B4%E7%BB%BF%E8%89%B2%E5%87%BA%E8%A1%8C%E5%9F%8E%E5%B8%82%E5%B7%A5%E5%85%B7%E4%B9%A6.pdf",
+    "platform": "https://www.cswcr.com/922lscxlnzy/index.htm",
+    "platformLabel": "9.22 Green Mobility Platform",
+    "language": "Chinese"
+  },
+  {
+    "year": "2024",
+    "title": "Shared Public Space",
+    "series": "Urban Mobility Handbook",
+    "role": "Contributing author",
+    "description": "Planning and design guidance connecting shared public space with walking, cycling, and more people-centred streets. Published through the 9.22 Green Mobility Platform as part of its annual handbook series, supported by the China Academy of Urban Planning and Design and the Urban Planning Society of China.",
+    "image": "report-green-2024.webp",
+    "pdf": "https://www.cswcr.com/2024%E5%B9%B4%E7%BB%BF%E8%89%B2%E5%87%BA%E8%A1%8C%E5%9F%8E%E5%B8%82%E5%B7%A5%E5%85%B7%E4%B9%A6.pdf",
+    "platform": "https://www.cswcr.com/922lscxlnzy/index.htm",
+    "platformLabel": "9.22 Green Mobility Platform",
+    "language": "Chinese"
+  },
+  {
+    "year": "2021",
+    "title": "Intermodal Transport Data Sharing",
+    "series": "Data Trust 1.0 · Final report",
+    "role": "Research assistant · Report contributor",
+    "description": "An HKU-led pilot funded by Hong Kong's Innovation and Technology Fund. Data Trust 1.0 tested whether a trusted third party could bring together rail, bus and payment data to understand journeys involving different transport modes around Exchange Square. I contributed international policy comparisons and report writing.",
+    "image": "report-intermodal.webp",
+    "pdf": "https://accesspartnership.com/wp-content/uploads/2021/11/Intermodal-Transport-Data-Sharing-Programme-Final-Report-Oct-27.pdf",
+    "platform": "https://accesspartnership.com/reports/intermodal-transport-data-sharing-programme-final-report/",
+    "platformLabel": "Programme website",
+    "language": "English"
+  },
+  {
+    "year": "2020",
+    "title": "Strategic Planning for Hong Kong 2030+",
+    "series": "HKU MSc Urban Planning · Strategic Planning Studio",
+    "role": "Co-author · Student team",
+    "description": "How can a long-term spatial plan guide decisions on the ground? Our HKU studio team reviewed Hong Kong's planning system and compared approaches in eight international cities. The report recommends closer coordination across departments and planning scales, more effective public engagement, and clearer monitoring and evaluation for Hong Kong 2030+.",
+    "image": "report-studio.webp",
+    "pdf": "https://foa-media.arch.hku.hk/media/upload/2021/01/Gr8T-Planning-Studio-Report.pdf",
+    "platform": "https://www.arch.hku.hk/gallery/upad/2020-strategic-planning-studio-final-reports/",
+    "platformLabel": "HKU studio gallery",
+    "language": "English"
+  },
+  {
+    "year": "2021",
+    "title": "Planning for an Age Friendly Kowloon City",
+    "series": "HKU MSc Urban Planning · Community Planning Studio",
+    "role": "Student team co-author · Presentation drawings & workshop poster",
+    "description": "How can Kowloon City better support residents as they age? Our HKU studio team combined street-level engagement, surveys, stakeholder interviews and a November 2020 community workshop to develop an age-friendly neighbourhood plan. I contributed the final presentation drawings and designed the workshop promotional poster.",
+    "image": "report-kowloon.webp",
+    "pdf": "https://foa-media.arch.hku.hk/media/upload/2021/02/URBP8001_Final-report_Group-2-IC-Planning-Consultant.pdf",
+    "platform": "https://www.arch.hku.hk/gallery/upad/community-planning-workshop-2021/",
+    "platformLabel": "HKU workshop gallery",
+    "language": "English"
+  }
+]
