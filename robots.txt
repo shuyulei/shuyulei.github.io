@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://shuyulei.netlify.app/sitemap.xml
+Sitemap: https://shuyulei.github.io/sitemap.xml
