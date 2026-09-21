@@ -1,5 +1,5 @@
-import {t,storage} from './i18n.mjs?v=20260921-szu-rating';
-import {icon} from './content.mjs?v=20260921-szu-rating';
+import {t,storage} from './i18n.mjs?v=20260921-honours-funding';
+import {icon} from './content.mjs?v=20260921-honours-funding';
 
 export function initAccessibility(){
  const header=document.querySelector('.site-header');
