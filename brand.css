@@ -182,6 +182,7 @@ html:not([data-night]):not([data-contrast]) #main>footer{
 .pub-year,.pub-authors,.pub-journal{font-size:.875rem;line-height:1.6}
 .report-item h3{font-size:1.25rem;line-height:1.4;font-weight:500}
 .report-item p,.policy-service .activity p,.talk-panels .activity p,.work-grid p{font-size:.9375rem;line-height:1.7}
+.work-grid .work-funding{font-size:.8125rem;line-height:1.55;color:var(--muted);margin-top:.65rem}
 .policy-service .activity h4,.lecture-school summary{font-size:1.0625rem;line-height:1.5}
 .activity-date,.policy-service .activity-date,.education-date,.school-location{font-size:.875rem}
 .education-degree strong{font-size:1rem}.education-degree>span,.school-preview p{font-size:.875rem}

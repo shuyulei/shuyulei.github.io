@@ -1,4 +1,6 @@
 export const extraCopy={
+ fundingStations:['Research Grants Council · General Research Fund (17602624)','香港研究资助局 · 优配研究金（17602624）','Research Grants Council · General Research Fund (17602624)'],
+ fundingIntermodal:['Innovation and Technology Fund · GSP/016/19','创新及科技基金 · GSP/016/19','Innovation and Technology Fund · GSP/016/19'],
  seeReports:['See reports & practice guides','查看报告与实践成果','Ver informes y guías'],
  heroKeywords:['Ageing & accessibility · Mobility data · Climate-responsive cities','老龄化与可达性 · 出行数据 · 气候适应型城市','Envejecimiento y accesibilidad · Datos de movilidad · Ciudades adaptadas al clima'],
  futureDesign:['Future · Design','未来·设计','Future · Design'],
