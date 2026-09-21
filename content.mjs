@@ -1,6 +1,6 @@
-import {researchText} from './research-details.mjs?v=20260921-research-credits';
-import {portfolioProjects} from './portfolio-data.mjs?v=20260921-research-credits';
-import {authorsMarkup,creditWords} from './research-authors.mjs?v=20260921-research-credits';
+import {researchText} from './research-details.mjs?v=20260921-compact-credits';
+import {portfolioProjects} from './portfolio-data.mjs?v=20260921-compact-credits';
+import {authorsMarkup,creditWords} from './research-authors.mjs?v=20260921-compact-credits';
 const portfolioUrl='https://www.dropbox.com/scl/fi/mka6zodudayeshsd66xnn/Lei-Shuyu-s-Portfolio.pdf?rlkey=9b5he2gn2nomp72278k6gu6uc&dl=1';
 const projects=[
  {id:'walking',title:'Whose 15-minute city?',topic:'Age-friendly accessibility',year:'2026',place:'Hong Kong',image:'walking.webp',alt:'Research map showing spatial clusters of older residents and walking accessibility in Hong Kong',venue:'Journal of Transport Geography',doi:'10.1016/j.jtrangeo.2026.104656',deck:'Rethinking proximity through the walking needs of older adults.',body:'A single walking-time threshold can hide important differences between age groups. This research develops an age-sensitive X-minute-city framework using travel survey records, facility locations, and a three-dimensional pedestrian network.',finding:'Older adults complete most daily walking trips within 5–12 minutes, depending on age and destination. Mapping these differences helps locate neighbourhoods where conventional proximity measures may overstate accessibility.',methods:'Travel survey analysis; age-specific walking thresholds; GIS network analysis; spatial clustering.',authors:'Shuyu Lei, Mushu Zhao, Jiangping Zhou, Xiaochun Yang',caption:'Spatial clustering of older-adult population and accessibility. Figure 13, Lei et al. (2026), Journal of Transport Geography.'},
@@ -22,7 +22,7 @@ function projectCard(p){
  const w=creditWords[p.uiLang]||creditWords.en;
  const href=`index.html?project=${encodeURIComponent(p.id)}`;
  const attrs=`href="${href}" data-project="${p.id}"`;
- return `<article class="project-card" data-project="${p.id}"><a ${attrs} aria-label="${escapeHtml(p.title)}">${visual}</a>${meta}<h3><a ${attrs}>${escapeHtml(p.title)} ${icon('arrow-up-right')}</a></h3><p class="project-summary">${escapeHtml(p.deck)}</p><div class="project-source"><span class="source-label">${p.doi?w.journal:w.award}</span><div class="project-venue">${escapeHtml(p.venue||'')}</div></div>${['heat','thermal','poverty'].includes(p.id)?authorsMarkup(p,{compact:true}):''}<a class="text-link project-detail-link" ${attrs}>${w.details} ${icon('arrow-right')}</a></article>`;
+ return `<article class="project-card" data-project="${p.id}"><a ${attrs} aria-label="${escapeHtml(p.title)}">${visual}</a>${meta}<h3><a ${attrs} aria-label="${escapeHtml(p.title)} · ${w.details}"><span>${escapeHtml(p.title)}</span><span class="detail-arrow" title="${w.details}">${icon('arrow-up-right')}<span class="detail-tooltip" aria-hidden="true">${w.details}</span></span></a></h3><p class="project-summary">${escapeHtml(p.deck)}</p><div class="project-source" aria-label="${p.doi?w.journal:w.award}"><div class="project-venue">${escapeHtml(p.venue||'')}</div></div>${['heat','thermal','poverty'].includes(p.id)?authorsMarkup(p,{compact:true}):''}</article>`;
 }
 
 const updates={

@@ -1,13 +1,13 @@
-import {projects,researchIds,designIds,escapeHtml,icon,projectCard} from './content.mjs?v=20260921-research-credits';
-import {t,localProject,initLanguage} from './i18n.mjs?v=20260921-research-credits';
-import {initAccessibility} from './reading.mjs?v=20260921-research-credits';
-import {initEducation} from './education.mjs?v=20260921-research-credits';
+import {projects,researchIds,designIds,escapeHtml,icon,projectCard} from './content.mjs?v=20260921-compact-credits';
+import {t,localProject,initLanguage} from './i18n.mjs?v=20260921-compact-credits';
+import {initAccessibility} from './reading.mjs?v=20260921-compact-credits';
+import {initEducation} from './education.mjs?v=20260921-compact-credits';
 
-import {galleryMarkup,initGallery} from './gallery.mjs?v=20260921-research-credits';
-import {initTalks} from './talks.mjs?v=20260921-research-credits';
-import {initReports} from './reports.mjs?v=20260921-research-credits';
-import {initEditorial} from './editorial.mjs?v=20260921-research-credits';
-import {authorsMarkup} from './research-authors.mjs?v=20260921-research-credits';
+import {galleryMarkup,initGallery} from './gallery.mjs?v=20260921-compact-credits';
+import {initTalks} from './talks.mjs?v=20260921-compact-credits';
+import {initReports} from './reports.mjs?v=20260921-compact-credits';
+import {initEditorial} from './editorial.mjs?v=20260921-compact-credits';
+import {authorsMarkup} from './research-authors.mjs?v=20260921-compact-credits';
 const dialog=document.querySelector('#project-dialog');
 let lastFocus=null,pushedProject=false;
 function openProject(id,push=false){

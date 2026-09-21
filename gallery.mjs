@@ -1,5 +1,5 @@
-import {escapeHtml as e,icon} from './content.mjs?v=20260921-research-credits';
-import {researchDetails} from './research-details.mjs?v=20260921-research-credits';
+import {escapeHtml as e,icon} from './content.mjs?v=20260921-compact-credits';
+import {researchDetails} from './research-details.mjs?v=20260921-compact-credits';
 const descriptions={
   "walking": [
     [
