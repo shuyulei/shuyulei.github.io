@@ -1,6 +1,5 @@
-import {initVisualizations} from './research-visualizations.mjs?v=20260929';
 import {projects,researchIds,designIds,escapeHtml,icon,projectCard} from './content.mjs?v=20260921-bridge-funding';
-import {t,localProject,initLanguage} from './i18n.mjs?v=20260929-visualizations';
+import {t,localProject,initLanguage} from './i18n.mjs?v=20260922-navigation';
 import {initAccessibility} from './reading.mjs?v=20260921-bridge-funding';
 import {initEducation} from './education.mjs?v=20260921-bridge-funding';
 
@@ -88,7 +87,6 @@ document.addEventListener('languagechange',e=>{
  const translated=projects.map(localProject);
  document.querySelector('#research-grid').innerHTML=researchIds.map(id=>translated.find(p=>p.id===id)).map(projectCard).join('');
  document.querySelector('#design-grid').innerHTML=designIds.map(id=>translated.find(p=>p.id===id)).map(projectCard).join('');
- initVisualizations(e.detail);
  initEditorial(e.detail);
  updateMobileLabels();
  const id=new URL(location).searchParams.get('project');if(dialog.open&&id)openProject(id);
